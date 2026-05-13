@@ -29,10 +29,7 @@ function costeTotal() {
     // Se busca el elemento con id="coste" y se le actualiza el coste
     // total de las entradas
     document.getElementById("coste").innerHTML = costeEntradas;
-}
-
-
-/**
+}/**
  * Presenta la ventana modal con los datos que se han introducido en el formulario
  * @returns false para que no se actualice la página al efectuar la compra
  */
