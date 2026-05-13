@@ -15,9 +15,14 @@ section,
 
 section > h1 {
     margin: 1rem 0;
+    font-family: Just Another Hand;
+    color: #E2007A;
+    font-size: 3rem;
+    font-weight: lighter;
 }
 
-/* Maquetación del formulario */
+/* FORMULARIO */
+
 section > form {
     width: 80%;
     max-width: 500px;
@@ -35,6 +40,10 @@ section > form > p {
     padding: 0.5rem;
 }
 
+section > form > input {
+    color: #E2007A;
+}
+
 section > form > input[type=submit],
 #modal > div > button {
     width: 10rem;
@@ -43,21 +52,21 @@ section > form > input[type=submit],
     background-color: white;
     font-weight: bold;
     border-radius: 10px;
-    border: teal 2px solid;
+    border: #E2007A 2px solid;
     transition: 0.5s;
     cursor: pointer;
 }
 
 section > form > input[type=submit]:hover,
 #modal > div > button:hover {
-    background-color: #008080;
+    background-color: #E2007A;
     color: white;
 }
 
 #modal {
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 128, 128, 0.8);
+    background-color: #E2007A;
     display: none;
 }
 
@@ -72,6 +81,7 @@ section > form > input[type=submit]:hover,
     margin: 0.5rem 0;
 }
 
+/* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
 @media screen and (max-width: 500px) {
     section > h1 {

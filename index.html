@@ -7,13 +7,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+        
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <script src="js/script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+    
     <body>
         <section>
-            <h1>Compra de entradas</h1>
+            <h1>COMPRA TU ENTRADA</h1>
             <!-- Se añade la detección del evento Submit para llamar a la función comprar() cuando se pulse el botón -->
             <form onsubmit="return comprar()">
                 <label for="nombre">Nombre:</label>
@@ -30,10 +35,11 @@
                 <label for="numero">Número de entradas:</label>
                 <!-- Se llama a la función costeTotal() cuando hay cambios en el número de entradas -->
                 <input type="number" id="numero" min="1" max="10" placeholder="Número de entradas" required onchange="costeTotal()">
-                <p>Coste total de las entradas: <span id="coste"></span></p>
+                <p>Coste total: <span id="coste"></span></p>
                 <input type="submit" value="Comprar entradas">
             </form>
         </section>
+        
         <div id="modal">
             <div>
                 <h2>La compra se ha realizado correctamente</h2>
