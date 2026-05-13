@@ -88,6 +88,12 @@ section > form > input[type="submit"]:hover,
   margin: 0.5rem 0;
 }
 
+/* merch */
+
+
+
+
+
 /* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
 @media screen and (max-width: 500px) {
