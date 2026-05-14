@@ -12,15 +12,21 @@
   font-size: 18px;
 }
 .container {
-  padding: var(--margin-body);
+  /*padding: var(--margin-body);*/
 }
 
 body {
   margin: 0;
 }
-a {
+
+header > nav > ul > li > a {
   text-decoration: none;
   color: var(--color-primary);
+  transition: 0.5s ease-in-out;
+}
+
+header > nav > ul > li > a:hover {
+  text-decoration: underline;
 }
 ul {
   list-style: none;
@@ -32,12 +38,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0;
+  margin: 30px 40px;
   top: 0;
 }
 
 header > a > img {
-  width: 200px;
+  width: 25vw;
+  max-width: 200px;
+  min-width: 100px;
   height: auto;
 }
 
@@ -59,9 +67,11 @@ main p {
 
 .menu-desktop > li > a {
   font-size: 20px;
+  transition: 0.5s ease-in-out;
 }
 
 .menu-desktop > li > a :hover {
+  text-decoration: underline;
 }
 /* Mobile Menu */
 
@@ -122,12 +132,57 @@ main p {
 }
 
 .video {
-  width: 100%;
   padding: 0;
+  margin: 0px 40px 40px 40px;
+  width: calc(100vw - 80px);
 }
 .video > video {
   width: calc(100vw - 80px);
   height: auto;
+}
+
+.Fashionweek {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 2rem 40px 2rem 40px;
+}
+.Fashionweek-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  width: calc(50vw - 80px);
+  gap: 20px;
+}
+.Fashionweek-text > h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 5vw;
+  min-font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Fashionweek-text > div > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  padding: 0;
+  gap: 30px;
+}
+
+.Fashionweek-text > div > ul > li > img {
+  width: 100px;
+  height: auto;
+}
+
+.Fashionweek-carrousel {
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255, 0, 0);
 }
 
 #modal {
@@ -229,5 +284,25 @@ section > form > input[type="submit"]:hover,
   }
   .hamb {
     display: block;
+  }
+  .Fashionweek {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Fashionweek-text {
+    width: 100%;
+  }
+  .video {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .video > video {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .Fashionweek-text > div > ul > li > img {
+    width: 50px;
+    height: auto;
   }
 }
