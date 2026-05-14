@@ -285,7 +285,11 @@ section > form > input[type="submit"]:hover,
 
 /* merch */
 
-
+#merch > div.galeria > div {
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
