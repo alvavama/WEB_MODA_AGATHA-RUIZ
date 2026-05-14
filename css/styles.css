@@ -11,9 +11,12 @@
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
+.container {
+  padding: var(--margin-body);
+}
 
 body {
-  margin: var(--margin-body);
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -68,7 +71,7 @@ main p {
   position: fixed;
   top: 60px;
   left: 0;
-  background-color: var(--pr-color);
+  background-color: var(--background-color);
   z-index: 9999;
 
   overflow: hidden;
@@ -127,7 +130,6 @@ main p {
   height: auto;
 }
 
-section,
 #modal {
   padding: 2rem;
   min-height: 100vh;
