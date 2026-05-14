@@ -2,10 +2,113 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entradas</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
     <script src="javascript/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <div class="container">
+    <body>
+      <header>
+        <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+        <nav class="nav-desktop">
+          <ul class="menu-desktop">
+            <li>
+              <a href="merch.html">Merch</a>
+            </li>
+            <li>
+              <a href="entradas.html">Entradas</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Icono hamburguesa (y x ) -->
+        <input type="checkbox" id="sideMenu" class="side-menu" />
+        <label class="hamb" for="sideMenu">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <!-- Menu movil -->
+        <nav class="nav-mobile">
+          <ul class="menu-mobile">
+            <li>
+              <a href="Merch.html">Merch</a>
+            </li>
+            <li>
+              <a href="entradas.html">Entradas</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="video">
+        <video src="video/videoentrada.mp4" autoplay muted loop></video>
+      </section>
+      <section class="Fashionweek">
+        <div class="Fashionweek-text">
+          <h1>FASHION WEEK MADRID 2026</h1>
+          <p>
+            La Mercedes-Benz Fashion Week Madrid 2027 se celebrará del 17 al 22
+            de marzo, consolidándose en su 83.ª edición como la principal
+            pasarela de moda de España. Durante once días, la capital acogerá
+            desfiles, presentaciones y actividades culturales que combinarán
+            pasarelas profesionales con experiencias urbanas, reafirmando su
+            posición junto a ciudades como París, Milán o Nueva York. En total,
+            72 diseñadores y marcas presentarán sus propuestas, integrando la
+            moda de autor española con la ciudad y sus habitantes.
+          </p>
+          <div>
+            <ul>
+              <li><img src="img/mercedes_logos_PNG18.png" alt="" /></li>
+              <li><img src="img/images-4.png" alt="" /></li>
+              <li><img src="img/inditex_logo.png" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="Fashionweek-carrousel">
+          <!-- Carruseell-->
+          <div></div>
+        </div>
+      </section>
+      <section id="sobrelaexposición">
+        <div>
+          <p>SOBRE LA EXPOSICIÓN</p>
+          <p>
+            Agatha Ruiz de la Prada se inspira en su propio universo creativo
+            para re-interpretarlo desde una perspectiva actual. La colección
+            parte de un ejercicio de autoexploración en el que la diseñadora
+            re-visita sus códigos más reconocibles y los reinventa mediante el
+            uso de nuevas herramientas creativas como la Inteligencia
+            Artificial.
+          </p>
+
+          <p>
+            Sus icónicas formas -corazones, estrellas, nubes y figuras
+            geométricas- se transforman y evolucionan, generando nuevas
+            combinaciones visuales que mantienen la esencia colorista y
+            optimista característica de la marca. La colección propone así un
+            diálogo entre tradición e innovación, donde el legado creativo de
+            Agatha se fusiona con las posibilidades que ofrece la tecnología.
+          </p>
+        </div>
+      </section>
+    </body>
+  </div>
 </html>
