@@ -291,6 +291,10 @@ section > form > input[type="submit"]:hover,
     flex-wrap: wrap;
 }
 
+#merch > div.galeria > div > figure {
+    flex: 15%;
+    padding: 1em;
+}
 
 
 /* MEDIA QUERIES */
