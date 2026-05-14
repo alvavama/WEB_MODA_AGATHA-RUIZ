@@ -2,14 +2,131 @@
   --color-primary: #e2007a;
   --background-color: white;
   --color-text: #000000;
-  --margin-body: 60px;
+  --margin-body: 0 40px 30px 40px;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
+
+body {
+  margin: var(--margin-body);
+}
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+ul {
+  list-style: none;
+}
+
+/* navbar */
+header {
+  color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  top: 0;
+}
+
+header > a > img {
+  width: 200px;
+  height: auto;
+}
+
+main {
+  padding: 40px;
+  margin-top: 40px;
+}
+
+main p {
+  margin-top: 40px;
+}
+
+.menu-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-desktop > li > a {
+  font-size: 20px;
+}
+
+.menu-desktop > li > a :hover {
+}
+/* Mobile Menu */
+
+.nav-mobile {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background-color: var(--pr-color);
+  z-index: 9999;
+
+  overflow: hidden;
+  max-height: 0;
+
+  transition: max-height 0.5s ease-in-out;
+}
+
+.menu-mobile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu-mobile > li > a {
+  font-size: 40px;
+}
+
+/* Menu icons */
+
+.hamb {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.hamb > .fa-xmark {
+  display: none;
+}
+
+.side-menu:checked ~ .nav-mobile {
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb > .fa-bars {
+  display: none;
+}
+
+.side-menu:checked ~ .hamb > .fa-xmark {
+  display: block;
+}
+
+.video {
+  width: 100%;
+  padding: 0;
+}
+.video > video {
+  width: calc(100vw - 80px);
+  height: auto;
+}
+
 section,
 #modal {
   padding: 2rem;
@@ -101,5 +218,14 @@ section > form > input[type="submit"]:hover,
 
   #modal > div > ul > li {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .nav-desktop {
+    display: none;
+  }
+  .hamb {
+    display: block;
   }
 }
