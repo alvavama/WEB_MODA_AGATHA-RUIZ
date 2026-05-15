@@ -11,9 +11,6 @@
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
-.container {
-  /*padding: var(--margin-body);*/
-}
 
 body {
   margin: 0;
@@ -179,12 +176,90 @@ main p {
 }
 
 .Fashionweek-carrousel {
-  align-items: center;
-  width: 100%;
+  width: calc(50vw - 80px);
   height: 500px;
-  background-color: rgb(255, 0, 0);
+  overflow: hidden;
+  background-color: black;
 }
 
+.Fashionweek-carrousel-window {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Fashionweek-carrousel-track {
+  position: relative;
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: 10s slider infinite;
+}
+
+.Fashionweek-carrousel-track > figure {
+  width: 100%;
+  flex: 0 0 33.3333%;
+  height: 100%;
+  position: relative;
+}
+
+.Fashionweek-carrousel-track > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.Fashionweek-carrousel-track > figure > figcaption {
+  width: 100%;
+  height: 6em;
+  position: absolute;
+  bottom: 0;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.Fashionweek-carrousel-track > figure > figcaption > h2 {
+  font-size: 1.4rem;
+}
+
+.Fashionweek-carrousel-track > figure > figcaption > p {
+  font-size: 1rem;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: 0;
+  }
+
+  30% {
+    left: -100%;
+  }
+
+  55% {
+    left: -100%;
+  }
+
+  60% {
+    left: -200%;
+  }
+
+  85% {
+    left: -200%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
 #sobrelaexposición {
   margin: 80px 40px 80px 40px;
 }
@@ -450,6 +525,10 @@ section > form > input[type="submit"]:hover,
     aspect-ratio: 16 / 9;
     margin-right: 0px;
     margin-bottom: 20px;
+  }
+  .Fashionweek-carrousel {
+    width: 100%;
+    height: 350px;
   }
 }
 
