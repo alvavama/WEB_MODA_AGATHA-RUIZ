@@ -440,6 +440,7 @@ section > form > input[type="submit"]:hover,
 }
 
 /* merch */
+
 .merchheader {
   font-family: Just Another Hand;
   font-size: 3rem;
@@ -464,18 +465,24 @@ section > form > input[type="submit"]:hover,
   color: white;
 }
 
+/* Galeria merch */
 
 #merch > div.galeria > div {
-  width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 #merch > div.galeria > div > figure {
     flex: 15%;
     padding: 1em;
+    text-align: left;
 }
 
+#merch > div.galeria > div > figure > figcaption > p {
+    color: var(--color-primary);
+}
 
 /* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
