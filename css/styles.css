@@ -451,7 +451,7 @@ section > form > input[type="submit"]:hover,
   justify-content: space-between;
   align-items: center;
   margin: 0%;
-  padding:  30px 40px 30px 40px;
+  padding:  0 40px 30px 40px;
 }
 
 .merchheader > .merchenlace {
