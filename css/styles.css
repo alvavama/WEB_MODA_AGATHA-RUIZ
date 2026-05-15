@@ -480,6 +480,9 @@ section > form > input[type="submit"]:hover,
     text-align: left;
 }
 
+#merch > div.galeria > div > figure > figcaption > p {
+    color: var(--color-primary);
+}
 
 /* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
