@@ -2,15 +2,210 @@
   --color-primary: #e2007a;
   --background-color: white;
   --color-text: #000000;
-  --margin-body: 60px;
+  --margin-body: 0 40px 30px 40px;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
-section,
+.container {
+  /*padding: var(--margin-body);*/
+}
+
+body {
+  margin: 0;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: 0.5s ease-in-out;
+}
+
+header > nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+}
+
+/* navbar */
+header {
+  color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 40px;
+  top: 0;
+}
+
+header > a > img {
+  width: 25vw;
+  max-width: 200px;
+  min-width: 100px;
+  height: auto;
+}
+
+main {
+  padding: 40px;
+  margin-top: 40px;
+}
+
+main p {
+  margin-top: 40px;
+}
+
+.menu-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-desktop > li > a {
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.menu-desktop > li > a :hover {
+  text-decoration: underline;
+}
+/* Mobile Menu */
+
+.nav-mobile {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background-color: var(--background-color);
+  z-index: 9999;
+
+  overflow: hidden;
+  max-height: 0;
+
+  transition: max-height 0.5s ease-in-out;
+}
+
+.menu-mobile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu-mobile > li > a {
+  font-size: 40px;
+}
+
+/* Menu icons */
+
+.hamb {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.hamb > .fa-xmark {
+  display: none;
+}
+
+.side-menu:checked ~ .nav-mobile {
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb > .fa-bars {
+  display: none;
+}
+
+.side-menu:checked ~ .hamb > .fa-xmark {
+  display: block;
+}
+
+.video {
+  padding: 0;
+  margin: 0px 40px 40px 40px;
+  width: calc(100vw - 80px);
+}
+.video > video {
+  width: calc(100vw - 80px);
+  height: auto;
+}
+
+.Fashionweek {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 2rem 40px 2rem 40px;
+}
+.Fashionweek-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: calc(50vw - 80px);
+  gap: 20px;
+}
+.Fashionweek-text > h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 5vw;
+  min-font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Fashionweek-text > div > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 0;
+  gap: 30px;
+}
+
+.Fashionweek-text > div > ul > li > img {
+  width: 10vw;
+  height: auto;
+}
+
+.Fashionweek-carrousel {
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 0, 0);
+}
+
+#sobrelaexposición {
+  margin: 80px 40px 80px 40px;
+}
+
+#sobrelaexposición > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+#sobrelaexposición > div > p {
+  width: 50vh;
+}
+
+#sobrelaexposición > div > p:first-child {
+  font-family: Just Another Hand;
+  font-size: 3rem;
+  color: var(--color-primary);
+}
+
 #modal {
   padding: 2rem;
   min-height: 100vh;
@@ -101,5 +296,45 @@ section > form > input[type="submit"]:hover,
 
   #modal > div > ul > li {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .hamb {
+    display: block;
+  }
+  .Fashionweek {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Fashionweek-text {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .Fashionweek-text > p {
+    justify-content: center;
+  }
+  .video {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .video > video {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .Fashionweek-text > div > ul > li > img {
+    width: 50px;
+    height: auto;
   }
 }
