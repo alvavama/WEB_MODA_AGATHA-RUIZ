@@ -439,6 +439,20 @@ section > form > input[type="submit"]:hover,
   margin: 0.5rem 0;
 }
 
+/* merch */
+
+#merch > div.galeria > div {
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#merch > div.galeria > div > figure {
+    flex: 15%;
+    padding: 1em;
+}
+
+
 /* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
 @media screen and (max-width: 720px) {
