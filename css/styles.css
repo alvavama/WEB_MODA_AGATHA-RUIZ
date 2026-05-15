@@ -206,7 +206,9 @@ main p {
   color: var(--color-primary);
 }
 
-#modal {
+
+/* ENTRADAS AITANA */
+.formulario,#modal {
   padding: 2rem;
   min-height: 100vh;
   display: flex;
@@ -225,28 +227,25 @@ section > h1 {
 
 /* FORMULARIO */
 
-section > form {
+.formulario > form {
   width: 80%;
   max-width: 500px;
 }
 
-section > form > label {
+.formulario > form > label {
   display: none;
 }
 
-section > form > input,
-section > form > select,
-section > form > p {
+.formulario > form > input,
+.formulario > form > select,
+.formulario > form > p {
   width: 100%;
   margin: 0.5rem 0;
   padding: 0.5rem;
 }
 
-section > form > input {
-  color: var(--color-primary);
-}
 
-section > form > input[type="submit"],
+.formulario > form > input[type="submit"],
 #modal > div > button {
   width: 10rem;
   margin: 0.5rem 0;
@@ -257,9 +256,10 @@ section > form > input[type="submit"],
   border: var(--color-primary) 2px solid;
   transition: 0.5s;
   cursor: pointer;
+  color: var(--color-primary);
 }
 
-section > form > input[type="submit"]:hover,
+.formulario > form > input[type="submit"]:hover,
 #modal > div > button:hover {
   background-color: var(--color-primary);
   color: white;
@@ -286,7 +286,7 @@ section > form > input[type="submit"]:hover,
 /* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
 @media screen and (max-width: 500px) {
-  section > h1 {
+  .formulario > h1 {
     font-size: 1.5rem;
   }
 
