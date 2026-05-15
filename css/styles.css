@@ -440,6 +440,30 @@ section > form > input[type="submit"]:hover,
 }
 
 /* merch */
+.merchheader {
+  font-family: Just Another Hand;
+  font-size: 3rem;
+  font-weight: lighter;
+  background-color: var(--color-primary);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0%;
+  padding:  30px 40px 30px 40px;
+}
+
+.merchheader > .merchenlace {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.merchheader > .merchenlace > a > i {
+  color: white;
+}
+
 
 #merch > div.galeria > div {
   width: 100%;
