@@ -217,12 +217,21 @@ main p {
   justify-content: center;
 }
 
-section > h1 {
+.formulario > .textoyfoto > h1 {
   margin: 1rem 0;
   font-family: Just Another Hand;
   color: var(--color-primary);
   font-size: 3rem;
   font-weight: lighter;
+}
+
+.formulario > .textoyfoto > img {
+  width: 50px;
+}
+
+.formulario > .textoyfoto {
+  display: flex;
+  flex-direction:row
 }
 
 /* FORMULARIO */
