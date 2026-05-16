@@ -259,7 +259,7 @@ main p {
 
 .formulario > form > input[type="submit"],
 #modal > div > button {
-  width: 10rem;
+  width: 12rem;
   margin: 0.5rem 0;
   padding: 0.5rem;
   background-color: white;
@@ -269,6 +269,7 @@ main p {
   transition: 0.5s;
   cursor: pointer;
   color: var(--color-primary);
+
 }
 
 .formulario > form > input[type="submit"]:hover,
@@ -299,31 +300,25 @@ main p {
   text-align: center;
 }
 
-.formulario > form > input {
-  /* align-items: center;
-  align-self: center;
-  align-content: center;
-  text-align: center; */
-}
 
 .tickets > .general {
   width: 40vw;
   max-width: 500px;
-  min-width: 250px;
+  min-width: 300px;
   height: auto;
 }
 
 .tickets > .frontrow {
   width: 40vw;
   max-width: 600px;
-  min-width: 300px;
+  min-width: 350px;
   height: auto;
 }
 
 .tickets > .vip {
   width: 40vw;
   max-width: 500px;
-  min-width: 250px;
+  min-width: 300px;
   height: auto;
 }
 
