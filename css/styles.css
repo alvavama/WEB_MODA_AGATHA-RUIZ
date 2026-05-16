@@ -257,8 +257,6 @@ main p {
 }
 
 
-
-
 .formulario > form > input[type="submit"],
 #modal > div > button {
   width: 10rem;
@@ -308,12 +306,28 @@ main p {
   text-align: center; */
 }
 
-.tickets > img {
+.tickets > .general {
   width: 40vw;
   max-width: 500px;
   min-width: 250px;
   height: auto;
 }
+
+.tickets > .frontrow {
+  width: 40vw;
+  max-width: 600px;
+  min-width: 300px;
+  height: auto;
+}
+
+.tickets > .vip {
+  width: 40vw;
+  max-width: 500px;
+  min-width: 250px;
+  height: auto;
+}
+
+
 
 .tickets {
   padding: 2rem;
@@ -325,7 +339,7 @@ main p {
 
 /* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .formulario > h1 {
     font-size: 1.5rem;
   }
@@ -337,7 +351,7 @@ main p {
   #modal > div > ul > li {
     font-size: 0.8rem;
   }
-}
+} */
 
 @media screen and (max-width: 720px) {
   * {
