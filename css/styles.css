@@ -481,17 +481,12 @@ section > form > input[type="submit"]:hover,
     padding: 40px 40px 40px 40px;
 }
 
-#merch > div.galeria > .fotos5 > figure > .textoarticulos > .precios > figcaption > p {
-    color: var(--color-primary);
-    text-align: right;
-}
-
 #merch > .galeria > .fotos5 > figure > .textoarticulos {
     color: var(--color-primary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px; 
 }
 
 /* MEDIA QUERIES */
