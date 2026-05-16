@@ -6,11 +6,11 @@ function costeTotal() {
     let costePorEntrada = 0;
     let valorExposicion = document.getElementById("exposicion").value;
     if (valorExposicion === "e1") {
-        costePorEntrada = 8;
+        costePorEntrada = 80;
     } else if (valorExposicion === "e2") {
-        costePorEntrada = 10;
+        costePorEntrada = 110;
     } else {
-        costePorEntrada = 15;
+        costePorEntrada = 150;
     }
     console.log("coste por entrada = " + costePorEntrada);
     let costeEntradas = (numeroEntradas * costePorEntrada) + " €";
@@ -29,11 +29,11 @@ function comprar() {
     let valorExposicion = document.getElementById("exposicion").value;
     let nombreExposicion = "";
     if (valorExposicion === "e1") {
-        nombreExposicion = "Exposición 1 - 8 €";
+        nombreExposicion = "Entrada General - 80 €";
     } else if (valorExposicion === "e2") {
-        nombreExposicion = "Exposición 2 - 10 €";
+        nombreExposicion = " Entrada Front row - 110 €";
     } else {
-        nombreExposicion = "Exposición 3 - 15 €";
+        nombreExposicion = "Entrada Vip - 150 €";
     }
     document.getElementById("ex").innerHTML = nombreExposicion;
 

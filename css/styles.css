@@ -210,7 +210,7 @@ main p {
 /* ENTRADAS AITANA */
 .formulario,#modal {
   padding: 2rem;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,19 +226,22 @@ main p {
 }
 
 .formulario > .textoyfoto > img {
-  width: 50px;
+  width: 70px;
 }
 
 .formulario > .textoyfoto {
   display: flex;
-  flex-direction:row
+  flex-direction:row;
+  gap: 1.5rem;
+  align-items: center;
 }
+
 
 /* FORMULARIO */
 
 .formulario > form {
   width: 80%;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .formulario > form > label {
@@ -252,6 +255,8 @@ main p {
   margin: 0.5rem 0;
   padding: 0.5rem;
 }
+
+
 
 
 .formulario > form > input[type="submit"],
@@ -291,6 +296,32 @@ main p {
 #modal > div > button {
   margin: 0.5rem 0;
 }
+
+.formulario > form > p {
+  text-align: center;
+}
+
+.formulario > form > input {
+  /* align-items: center;
+  align-self: center;
+  align-content: center;
+  text-align: center; */
+}
+
+.tickets > img {
+  width: 40vw;
+  max-width: 500px;
+  min-width: 250px;
+  height: auto;
+}
+
+.tickets {
+  padding: 2rem;
+  /* display: flex; */
+
+}
+
+
 
 /* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
