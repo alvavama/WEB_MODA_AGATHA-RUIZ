@@ -269,7 +269,6 @@ main p {
   transition: 0.5s;
   cursor: pointer;
   color: var(--color-primary);
-
 }
 
 .formulario > form > input[type="submit"]:hover,
@@ -325,8 +324,7 @@ main p {
 
 
 .tickets {
-  padding: 2rem;
-  /* display: flex; */
+  padding: 1.5rem;
 
 }
 
