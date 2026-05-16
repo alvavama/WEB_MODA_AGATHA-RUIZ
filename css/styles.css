@@ -308,7 +308,21 @@ main p {
   text-align: center; */
 }
 
-.tickets > img {
+.tickets > .general {
+  width: 40vw;
+  max-width: 500px;
+  min-width: 250px;
+  height: auto;
+}
+
+.tickets > .frontrow {
+  width: 40vw;
+  max-width: 600px;
+  min-width: 300px;
+  height: auto;
+}
+
+.tickets > .vip {
   width: 40vw;
   max-width: 500px;
   min-width: 250px;
