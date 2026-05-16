@@ -500,6 +500,7 @@ section > form > input[type="submit"]:hover,
     padding: 20px 0px 0px 0px; 
 }
 
+
 /* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
 @media screen and (max-width: 720px) {
