@@ -373,16 +373,19 @@ hr {
   border: 1px solid black;
   width: 100%;
 }
-#modal {
+
+
+/* ENTRADAS AITANA */
+.formulario,#modal {
   padding: 2rem;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-section > h1 {
+.formulario > .textoyfoto > h1 {
   margin: 1rem 0;
   font-family: Just Another Hand;
   color: var(--color-primary);
@@ -390,32 +393,41 @@ section > h1 {
   font-weight: lighter;
 }
 
-/* FORMULARIO */
-
-section > form {
-  width: 80%;
-  max-width: 500px;
+.formulario > .textoyfoto > img {
+  width: 70px;
 }
 
-section > form > label {
+.formulario > .textoyfoto {
+  display: flex;
+  flex-direction:row;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+
+/* FORMULARIO */
+
+.formulario > form {
+  width: 80%;
+  max-width: 600px;
+}
+
+.formulario > form > label {
   display: none;
 }
 
-section > form > input,
-section > form > select,
-section > form > p {
+.formulario > form > input,
+.formulario > form > select,
+.formulario > form > p {
   width: 100%;
   margin: 0.5rem 0;
   padding: 0.5rem;
 }
 
-section > form > input {
-  color: var(--color-primary);
-}
 
-section > form > input[type="submit"],
+.formulario > form > input[type="submit"],
 #modal > div > button {
-  width: 10rem;
+  width: 12rem;
   margin: 0.5rem 0;
   padding: 0.5rem;
   background-color: white;
@@ -424,9 +436,10 @@ section > form > input[type="submit"],
   border: var(--color-primary) 2px solid;
   transition: 0.5s;
   cursor: pointer;
+  color: var(--color-primary);
 }
 
-section > form > input[type="submit"]:hover,
+.formulario > form > input[type="submit"]:hover,
 #modal > div > button:hover {
   background-color: var(--color-primary);
   color: white;
@@ -448,6 +461,39 @@ section > form > input[type="submit"]:hover,
 #modal > div > ul > li,
 #modal > div > button {
   margin: 0.5rem 0;
+}
+
+.formulario > form > p {
+  text-align: center;
+}
+
+
+.tickets > .general {
+  width: 40vw;
+  max-width: 500px;
+  min-width: 300px;
+  height: auto;
+}
+
+.tickets > .frontrow {
+  width: 40vw;
+  max-width: 600px;
+  min-width: 350px;
+  height: auto;
+}
+
+.tickets > .vip {
+  width: 40vw;
+  max-width: 500px;
+  min-width: 300px;
+  height: auto;
+}
+
+
+
+.tickets {
+  padding: 1.5rem;
+
 }
 
 /* merch */
