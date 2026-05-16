@@ -452,7 +452,7 @@ section > form > input[type="submit"]:hover,
   justify-content: space-between;
   align-items: center;
   margin: 0%;
-  padding:  0 40px 30px 40px;
+  padding:  30px 40px 30px 40px;
 }
 
 .merchheader > .merchenlace {
@@ -478,10 +478,20 @@ section > form > input[type="submit"]:hover,
     flex: 15%;
     padding: 1em;
     text-align: left;
+    padding: 40px 40px 40px 40px;
 }
 
-#merch > div.galeria > div > figure > figcaption > p {
+#merch > div.galeria > .fotos5 > figure > .textoarticulos > .precios > figcaption > p {
     color: var(--color-primary);
+    text-align: right;
+}
+
+#merch > .galeria > .fotos5 > figure > .textoarticulos {
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0px 0px 0px;
 }
 
 /* MEDIA QUERIES */
