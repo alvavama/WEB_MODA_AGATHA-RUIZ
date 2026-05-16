@@ -260,6 +260,7 @@ main p {
     left: 0;
   }
 }
+
 #sobrelaexposición {
   margin: 80px 40px 80px 40px;
 }
@@ -300,7 +301,16 @@ main p {
 .galeriapasarela > img {
   width: 100%;
   height: auto;
+  transition: 0.3s;
 }
+
+.galeriapasarela > img:hover {
+  border: 3px solid var(--color-primary);
+  width: 98%;
+  justify-self: center;
+  align-self: center;
+}
+
 #sobreagata {
   background-color: var(--color-primary);
   color: white;
@@ -358,6 +368,7 @@ footer {
 .footer-container > div > div > p {
   margin-bottom: 0.5rem;
 }
+
 hr {
   border: 1px solid black;
   width: 100%;
@@ -452,7 +463,7 @@ section > form > input[type="submit"]:hover,
   justify-content: space-between;
   align-items: center;
   margin: 0%;
-  padding:  30px 40px 30px 40px;
+  padding: 30px 40px 30px 40px;
 }
 
 .merchheader > .merchenlace {
@@ -468,20 +479,20 @@ section > form > input[type="submit"]:hover,
 /* Galeria merch */
 
 #merch > div.galeria > div {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #merch > div.galeria > div > figure {
-    flex: 15%;
-    padding: 1em;
-    text-align: left;
+  flex: 15%;
+  padding: 1em;
+  text-align: left;
 }
 
 #merch > div.galeria > div > figure > figcaption > p {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 /* MEDIA QUERIES */
