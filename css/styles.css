@@ -489,10 +489,15 @@ section > form > input[type="submit"]:hover,
   flex: 15%;
   padding: 1em;
   text-align: left;
+  padding: 40px 40px 40px 40px;
 }
 
-#merch > div.galeria > div > figure > figcaption > p {
-  color: var(--color-primary);
+#merch > .galeria > .fotos5 > figure > .textoarticulos {
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0px 0px 0px; 
 }
 
 /* MEDIA QUERIES */
