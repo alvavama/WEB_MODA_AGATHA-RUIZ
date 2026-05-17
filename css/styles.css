@@ -374,9 +374,9 @@ hr {
   width: 100%;
 }
 
-
 /* ENTRADAS AITANA */
-.formulario,#modal {
+.formulario,
+#modal {
   padding: 2rem;
   /* min-height: 100vh; */
   display: flex;
@@ -399,11 +399,10 @@ hr {
 
 .formulario > .textoyfoto {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   gap: 1.5rem;
   align-items: center;
 }
-
 
 /* FORMULARIO */
 
@@ -424,10 +423,9 @@ hr {
   padding: 0.5rem;
 }
 
-
 .formulario > form > input[type="submit"],
 #modal > div > button {
-  width: 12rem;
+  width: 100%;
   margin: 0.5rem 0;
   padding: 0.5rem;
   background-color: white;
@@ -467,7 +465,6 @@ hr {
   text-align: center;
 }
 
-
 .tickets > .general {
   width: 40vw;
   max-width: 500px;
@@ -489,11 +486,8 @@ hr {
   height: auto;
 }
 
-
-
 .tickets {
   padding: 1.5rem;
-
 }
 
 /* merch */
@@ -539,11 +533,11 @@ hr {
 }
 
 #merch > .galeria > .fotos5 > figure > .textoarticulos {
-    color: var(--color-primary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 0px 0px 0px; 
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0px 0px 0px;
 }
 
 /* MEDIA QUERIES */
