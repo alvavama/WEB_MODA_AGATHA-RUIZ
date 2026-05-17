@@ -65,3 +65,20 @@ function cerrarVentana() {
     // Se oculta la ventana modal cambiando el valor de su propiedad CSS display
     document.getElementById("modal").style.display = "none";
 }
+
+
+function abrirModal() {
+    document.getElementById('miModal').style.display = 'block';
+}
+
+function cerrarModal() {
+    document.getElementById('miModal').style.display = 'none';
+}
+
+// Opcional: Cierra el modal si el usuario hace clic fuera de la caja blanca
+window.onclick = function(event) {
+    var modal = document.getElementById('miModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
