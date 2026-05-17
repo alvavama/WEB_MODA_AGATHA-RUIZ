@@ -604,6 +604,14 @@ hr {
     width: 100%;
     text-align: center;
   }
+
+  #merch > div.galeria > div > figure > img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 @media screen and (max-width: 892px) {
   .sobreagata-text {
@@ -654,4 +662,26 @@ hr {
     height: auto;
     margin-bottom: 20px;
   }
+
+  #merch > div.galeria > div {
+    flex-wrap: wrap;
+
+  }
+
+  #merch > div.galeria > div > figure > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+     }
+
+  .fotos5 {
+    width: 100%;
+    padding: 1.3em;
+    text-align: left;
+    padding: 20px 20px 20px 20px;
+  }   
+
+  #merch > div.galeria > div > figure > .textoarticulos {
+    font-size: 1.2rem;
+  }  
 }
