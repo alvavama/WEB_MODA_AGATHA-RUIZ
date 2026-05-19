@@ -611,6 +611,8 @@ hr {
     justify-content: center;
     align-items: center;
   }
+
+
   
 }
 @media screen and (max-width: 892px) {
@@ -640,6 +642,7 @@ hr {
     height: 350px;
   }
 }
+
 
 @media screen and (max-width: 500px) {
   section > h1 {
@@ -684,4 +687,9 @@ hr {
   #merch > div.galeria > div > figure > .textoarticulos {
     font-size: 1.2rem;
   }  
+
+  .tickets {
+    display: none;
+  }
+
 }
