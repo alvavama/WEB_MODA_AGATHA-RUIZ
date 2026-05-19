@@ -545,6 +545,91 @@ hr {
   padding: 20px 0px 0px 0px;
 }
 
+
+#merch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  width: 55%;
+  max-width: 750px;
+}
+
+header {
+  text-align: center;
+  width: 40%;
+  padding: 3rem 0;
+  max-width: 500px;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.galeria {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#merch >.galeria > .fotos5 > figure {
+  flex: 26%;
+  border: black 2px solid;
+  /* Para que se note que se puede hacer clic */
+  cursor: pointer;
+}
+
+#merch > .galeria >.fotos5 > figure figcaption {
+  display: none;
+}
+
+#modalmerch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 3rem 10%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalmerch > figure {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#modalmerch > figure > * {
+  width: 45%;
+  max-width: 500px;
+}
+
+#modalmerch > figure > figcaption {
+  color: white;
+}
+
+#modalmerch > figure > figcaption > p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#cerrar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 5rem;
+  color: white;
+  cursor: pointer;
+}
+
+
 /* MEDIA QUERIES */
 /* Maquetación para pantallas de menos de 500px de ancho */
 @media screen and (max-width: 720px) {
