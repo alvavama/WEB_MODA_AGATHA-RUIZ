@@ -406,6 +406,11 @@ hr {
 
 /* FORMULARIO */
 
+.formulario {
+  margin-top: 2rem;
+  margin-bottom: -5rem;
+}
+
 .formulario > form {
   width: 80%;
   max-width: 600px;
@@ -487,7 +492,7 @@ hr {
 }
 
 .tickets {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 /* merch */
