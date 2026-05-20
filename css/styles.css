@@ -560,6 +560,14 @@ hr {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1016px) { 
+  #merch > div.galeria > div {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 892px) {
   .sobreagata-text {
     flex-direction: column;
@@ -652,7 +660,11 @@ hr {
     text-align: center;
   }
 
- 
+  #merch > div.galeria > div {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .tickets {
     flex-direction: column;
@@ -695,8 +707,12 @@ hr {
     margin-bottom: 20px;
   }
 
- 
-  
+  #merch > div.galeria > div > figure > img {
+    width: 100%;
+    gap: 0px;
+    margin-bottom: 20px;
+
+  }
 
   .tickets {
     display: none;
