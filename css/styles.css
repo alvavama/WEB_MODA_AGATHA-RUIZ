@@ -556,8 +556,8 @@ hr {
 }
 
 .botonmerch:hover {
-  box-shadow: #e2007a 0px 2px 4px;
-  border: var(--color-primary) 2px solid;
+  box-shadow: #e2007a 0px 0px 2px 4px;
+  transform: scale(1.03);
 }
 
 
