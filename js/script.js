@@ -45,3 +45,20 @@ function cerrarVentana() {
     console.log("-----------función cerrarVentana");
     document.getElementById("modal").style.display = "none";
 }
+
+
+function abrirModal() {
+    document.getElementById('miModal').style.display = 'block';
+}
+
+function cerrarModal() {
+    document.getElementById('miModal').style.display = 'none';
+}
+
+// Opcional: Cierra el modal si el usuario hace clic fuera de la caja blanca
+window.onclick = function(event) {
+    var modal = document.getElementById('miModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
