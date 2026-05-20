@@ -530,6 +530,8 @@ hr {
 #merch > div.galeria > div > figure {
   margin: 0;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 #merch figure img {
