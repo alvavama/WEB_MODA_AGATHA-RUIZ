@@ -521,18 +521,21 @@ hr {
 
 #merch > div.galeria > div {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0px 40px 0px 40px;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 40px;
 }
 
 #merch > div.galeria > div > figure {
-  flex-wrap: wrap;
-  padding: 1em;
+  margin: 0;
   text-align: left;
-  padding: 40px 40px 40px 40px;
+}
+
+#merch figure img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
 }
 
 #merch > .galeria > .fotos5 > figure > .textoarticulos {
@@ -559,14 +562,6 @@ hr {
 
 
 /* MEDIA QUERIES */
-
-@media screen and (max-width: 1016px) { 
-  #merch > div.galeria > div {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 @media screen and (max-width: 892px) {
   .sobreagata-text {
@@ -597,6 +592,16 @@ hr {
 
 }
 /* Maquetación para pantallas de menos de 500px de ancho */
+
+@media (max-width: 770px){
+
+  #merch > div.galeria > div{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+
+}
+
 @media screen and (max-width: 720px) {
   * {
     margin: 0;
@@ -660,12 +665,6 @@ hr {
     text-align: center;
   }
 
-  #merch > div.galeria > div {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .tickets {
     flex-direction: column;
   }
@@ -720,4 +719,18 @@ hr {
   .formulario {
     min-height: 100vh;
   }
+}
+
+@media (max-width: 480px){
+
+  #merch > div.galeria > div{
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  #merch > .galeria > .fotos5 > figure > .textoarticulos{
+    flex-direction: column;
+    gap: 5px;
+  }
+
 }
