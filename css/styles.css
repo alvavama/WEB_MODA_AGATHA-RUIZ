@@ -470,29 +470,25 @@ hr {
   text-align: center;
 }
 
+.tickets {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 40px 50px 40px;
+  align-items: center;
+}
 .tickets > .general {
-  width: 40vw;
-  max-width: 500px;
-  min-width: 300px;
-  height: auto;
+  width: 30vw;
+  height: 100%;
 }
 
 .tickets > .frontrow {
-  width: 40vw;
-  max-width: 600px;
-  min-width: 350px;
-  height: auto;
+  width: 30vw;
+  height: 100%;
 }
 
 .tickets > .vip {
-  width: 40vw;
-  max-width: 500px;
-  min-width: 300px;
-  height: auto;
-}
-
-.tickets {
-  padding: 2rem;
+  width: 30vw;
+  height: 100%;
 }
 
 /* merch */
@@ -546,6 +542,33 @@ hr {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 892px) {
+  .sobreagata-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sobreagata-text > p:first-child {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+  }
+  .sobreagata-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sobreagata-image > img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .Fashionweek-carrousel {
+    width: 100%;
+    height: 350px;
+  }
+}
 /* Maquetación para pantallas de menos de 500px de ancho */
 @media screen and (max-width: 720px) {
   * {
@@ -616,38 +639,24 @@ hr {
     justify-content: center;
     align-items: center;
   }
-
-
-  
-}
-@media screen and (max-width: 892px) {
-  .sobreagata-text {
+  .tickets {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  .sobreagata-text > p:first-child {
-    width: 100%;
-    text-align: center;
-    margin-right: 0px;
+  .tickets > .general {
+    width: 50vw;
+    height: 100%;
   }
-  .sobreagata-image {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+  .tickets > .frontrow {
+    width: 50vw;
+    height: 100%;
   }
-  .sobreagata-image > img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-  .Fashionweek-carrousel {
-    width: 100%;
-    height: 350px;
+
+  .tickets > .vip {
+    width: 50vw;
+    height: 100%;
   }
 }
-
 
 @media screen and (max-width: 500px) {
   section > h1 {
@@ -673,28 +682,29 @@ hr {
 
   #merch > div.galeria > div {
     flex-wrap: wrap;
-
   }
 
   #merch > div.galeria > div > figure > img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-     }
+  }
 
   .fotos5 {
     width: 100%;
     padding: 1.3em;
     text-align: left;
     padding: 20px 20px 20px 20px;
-  }   
+  }
 
   #merch > div.galeria > div > figure > .textoarticulos {
     font-size: 1.2rem;
-  }  
+  }
 
   .tickets {
     display: none;
   }
-
+  .formulario {
+    min-height: 100vh;
+  }
 }
