@@ -524,7 +524,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 0 40px;
+  padding: 40px 40px;
 }
 
 #merch > div.galeria > div > figure {
@@ -599,7 +599,7 @@ hr {
 
   #merch > div.galeria > div{
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 20px;
+    padding: 20px 20px;
   }
 
 }
@@ -727,7 +727,7 @@ hr {
 
   #merch > div.galeria > div{
     grid-template-columns: 1fr;
-    padding: 0 10px;
+    padding: 10px 10px;
   }
 
   #merch > .galeria > .fotos5 > figure > .textoarticulos{
